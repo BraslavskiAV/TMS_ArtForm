@@ -1,7 +1,128 @@
-.main{
+.main {
     width: 100%;
+    background-image: url(./подложка.png), url(./1-flowers\ 2.png);
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 560px;
 }
-.container{
+
+.container {
     width: 1170px;
-    
+    margin: 0 auto;
+    height: 560px;
+    display: flex;
+    align-items: center;
+}
+
+.container-input {
+    border-radius: 15px;
+    background: #FBF7F6;
+    width: 808px;
+    height: 351px;
+    flex-shrink: 0;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+    display: flex;
+    justify-content: end;
+}
+
+.image-hands {
+    border-radius: 0px 15px 15px 0px;
+}
+
+.input-form__title {
+    color: #371030;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.6px;
+}
+
+.container-input-form {
+    width: 400px;
+}
+
+.input-form {
+    width: 324px;
+    margin: 0 auto;
+    margin-top:25px;
+}
+
+.input-form-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-top {
+    width: 144px;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid #371030;
+    background: none;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.64px;
+    height: 30px;
+    color: #371030;
+}
+.input-bottom-mail{
+    width: 320px;
+    border: none;
+    border-bottom: 1px solid #371030;
+    height: 30px;
+    background: none;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.64px;
+    color: #371030;
+    margin-top: 10px;
+}
+.input-bottom-text{
+    margin-top: 20px;
+    height: 25px;
+    width: 320px;
+    border: none;
+    border-bottom: 1px solid #371030;
+    background: none;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.64px;
+    color: #371030;
+}
+.input-bottom-button{
+    border-radius: 100px;
+background: var(--button-colors-btn-red, #FFB0BA);
+border: none;
+/* Button Shadows/BTN Red - Shadow */
+box-shadow: 3px 3px 0px 3px #DE8E98;
+width: 324px;
+height: 55px;
+flex-shrink: 0;
+color: #9A3C48;
+text-align: center;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+letter-spacing: 0.64px;
+margin-top: 30px;
+}
+.input-top_placeholder::placeholder{
+    color:#371030;
+}
+.input-bottom-mail_placeholder::placeholder{
+    color:#371030;
 }
