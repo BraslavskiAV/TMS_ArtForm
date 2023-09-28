@@ -1,9 +1,21 @@
 .main {
-    width: 100%;
     background-image: url(./подложка.png), url(./1-flowers\ 2.png);
     background-repeat: no-repeat;
-    width: 1200px;
+    width: 1400px;
     height: 560px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.image-flower{
+    width: 500px;
+    height: 500px;
+    background-image: url(./1-flowers\ 2.png);
+    position: absolute;
+    right: 965px;
+    bottom: 230px;
+    transform: rotate(4,33deg);
 }
 
 .container {
@@ -12,6 +24,8 @@
     height: 560px;
     display: flex;
     align-items: center;
+    position: absolute;
+    z-index: 1;
 }
 
 .container-input {
@@ -47,10 +61,10 @@
 .input-form {
     width: 324px;
     margin: 0 auto;
-    margin-top:25px;
+    margin-top: 25px;
 }
 
-.input-form-top{
+.input-form-top {
     display: flex;
     justify-content: space-between;
 }
@@ -71,7 +85,8 @@
     height: 30px;
     color: #371030;
 }
-.input-bottom-mail{
+
+.input-bottom-mail {
     width: 320px;
     border: none;
     border-bottom: 1px solid #371030;
@@ -86,7 +101,8 @@
     color: #371030;
     margin-top: 10px;
 }
-.input-bottom-text{
+
+.input-bottom-text {
     margin-top: 20px;
     height: 25px;
     width: 320px;
@@ -101,28 +117,31 @@
     letter-spacing: 0.64px;
     color: #371030;
 }
-.input-bottom-button{
+
+.input-bottom-button {
     border-radius: 100px;
-background: var(--button-colors-btn-red, #FFB0BA);
-border: none;
-/* Button Shadows/BTN Red - Shadow */
-box-shadow: 3px 3px 0px 3px #DE8E98;
-width: 324px;
-height: 55px;
-flex-shrink: 0;
-color: #9A3C48;
-text-align: center;
-font-family: Montserrat;
-font-size: 16px;
-font-style: normal;
-font-weight: 900;
-line-height: normal;
-letter-spacing: 0.64px;
-margin-top: 30px;
+    background: var(--button-colors-btn-red, #FFB0BA);
+    border: none;
+    /* Button Shadows/BTN Red - Shadow */
+    box-shadow: 3px 3px 0px 3px #DE8E98;
+    width: 324px;
+    height: 55px;
+    flex-shrink: 0;
+    color: #9A3C48;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 0.64px;
+    margin-top: 30px;
 }
-.input-top_placeholder::placeholder{
-    color:#371030;
+
+.input-top_placeholder::placeholder {
+    color: #371030;
 }
-.input-bottom-mail_placeholder::placeholder{
-    color:#371030;
+
+.input-bottom-mail_placeholder::placeholder {
+    color: #371030;
 }
